@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soy Más + — Centro de Interés</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuentes elegantes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN MODERNA ROSA / BLANCO -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <div class="logo-fem">🌸 Soy Más +</div>
+      <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#mision">Nuestra Esencia</a>
+        <a href="#inspiracion">Lienzo Vivo</a>
+        <a href="#talleres">Talleres</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECCIÓN HERO PRINCIPAL CON 6 FOTOS GIGANTES Y AMPLIO MOVIMIENTO -->
+  <section id="inicio" class="hero-fem">
+    <!-- Capa de las 6 fotos flotantes grandes y en constante movimiento -->
+    <div class="hero-fotos-bg">
+      <div class="foto-flotante f1"><img src="1.jpeg" alt="Actividad Soy Más"></div>
+      <div class="foto-flotante f2"><img src="2.jpeg" alt="Taller Soy Más"></div>
+      <div class="foto-flotante f3"><img src="3.jpeg" alt="Comunidad Soy Más"></div>
+      <div class="foto-flotante f4"><img src="4.jpeg" alt="Dinámica Soy Más"></div>
+      <div class="foto-flotante f5"><img src="5.jpeg" alt="Participación"></div>
+      <div class="foto-flotante f6"><img src="6.jpeg" alt="Equipo Soy Más"></div>
+    </div>
+    
+    <!-- Capa translúcida ligera para mantener el texto perfectamente legible -->
+    <div class="hero-overlay-light"></div>
+
+    <div class="hero-box">
+      <span class="badge-fem">Centro de Interés</span>
+      <h1>Soy Más +</h1>
+      <p>Un espacio formativo enfocado en enseñar a ser líderes, cultivar valores, practicar el autocuidado y descubrir el verdadero potencial interior.</p>
+      <a href="#mision" class="btn-fem-primary">Descubre más</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE ESENCIA -->
+  <section id="mision" class="sec-grid-fem">
+    <div class="container-inner">
+      <h2 class="title-fem">Nuestros Pilares</h2>
+      <p class="subtitle-fem">Construyendo una comunidad fuerte, consciente y segura de sí misma.</p>
+
+      <div class="grid-cards">
+        <div class="card-fem">
+          <div class="card-icon">✨</div>
+          <h3>¿Quiénes Somos?</h3>
+          <p><strong>Soy Más +:</strong> Un centro de interés diseñado para acompañar a las mujeres en su desarrollo integral, potenciando su capacidad de liderazgo y su bienestar personal.</p>
+        </div>
+
+        <div class="card-fem">
+          <div class="card-icon">💡</div>
+          <h3>¿Qué Buscamos?</h3>
+          <p>Enseñar valores fundamentales, promover el autocuidado y lograr que cada participante conozca profundamente sobre sí misma para brillar con seguridad.</p>
+        </div>
+
+        <div class="card-fem">
+          <div class="card-icon">🤝</div>
+          <h3>¿Cómo Trabajamos?</h3>
+          <p>A través de talleres prácticos, círculos de reflexión, dinámicas de liderazgo y herramientas de crecimiento emocional y personal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELEMENTO INNOVADOR: LIENZO INTERACTIVO DE EMPODERAMIENTO -->
+  <section id="inspiracion" class="sec-inspiracion">
+    <div id="marquesinaFondo" class="marquesina-container">
+      <div class="marquesina-track" id="marquesinaTrack">
+        <span class="texto-flotante">🌸 Liderazgo</span>
+        <span class="texto-flotante">✨ Autocuidado</span>
+        <span class="texto-flotante">💡 Autoconocimiento</span>
+        <span class="texto-flotante">💖 Valores</span>
+        <span class="texto-flotante">💪 Fortaleza</span>
+      </div>
+    </div>
+
+    <div class="container-inner relative-z">
+      <h2 class="title-fem">Lienzo Vivo de Empoderamiento</h2>
+      <p class="subtitle-fem">Genera tu frase del día y comparte tu palabra clave con la comunidad.</p>
+
+      <div class="inspira-box">
+        <div class="frase-card">
+          <p id="fraseTexto">"Conocerse a una misma es el primer paso para transformar el mundo."</p>
+          <button class="btn-fem-secondary" onclick="generarFrase()">✨ Generar Frase de Hoy</button>
+        </div>
+
+        <div class="mural-interactivo">
+          <h4>Añade tu palabra o frase del día:</h4>
+          <div class="input-mural-group">
+            <input type="text" id="palabraInput" placeholder="Ej: Liderazgo, Autocuidado, Respeto...">
+            <button onclick="agregarPalabra()">Publicar</button>
+          </div>
+          <div class="tags-container" id="tagsContainer">
+            <span class="tag-item">Liderazgo</span>
+            <span class="tag-item">Autocuidado</span>
+            <span class="tag-item">Valores</span>
+            <span class="tag-item">Confianza</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE TALLERES -->
+  <section id="talleres" class="sec-talleres">
+    <div class="container-inner">
+      <h2 class="title-fem">¿Qué se hace en los talleres?</h2>
+      <p class="subtitle-fem">Dinámicas diseñadas para el crecimiento colectivo e individual.</p>
+
+      <div class="talleres-wrapper">
+        <div class="taller-item">
+          <span class="taller-num">01</span>
+          <div>
+            <h4>Formación en Liderazgo</h4>
+            <p>Herramientas y dinámicas para guiar con el ejemplo, tomar decisiones asertivas y expresar ideas con firmeza.</p>
+          </div>
+        </div>
+
+        <div class="taller-item">
+          <span class="taller-num">02</span>
+          <div>
+            <h4>Valores & Autocuidado</h4>
+            <p>Espacios dedicados a cultivar principios éticos, bienestar físico y mental, y el amor propio como prioridad.</p>
+          </div>
+        </div>
+
+        <div class="taller-item">
+          <span class="taller-num">03</span>
+          <div>
+            <h4>Autoconocimiento Profundo</h4>
+            <p>Dinámicas de introspección para que cada mujer descubra sus fortalezas, propósitos y un profundo entendimiento de sí misma.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN DE ADMINISTRADORES Y RESPONSABLES -->
+  <section id="equipo" class="sec-grid-fem" style="background: var(--gris-suave);">
+    <div class="container-inner">
+      <h2 class="title-fem">Administradores y Responsables</h2>
+      <p class="subtitle-fem">Liderazgo y guía institucional del Centro de Interés.</p>
+
+      <div class="grid-cards">
+        <div class="card-fem" style="background: var(--blanco);">
+          <div class="card-icon">👑</div>
+          <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--rosa-acento);">Jefe Inmediato / Administradora</span>
+          <h3 style="margin-top: 5px;">Prof. Alba Luz Malagón Perilla</h3>
+          <p>Coordinación y supervisión general de los Centros de Interés de la institución.</p>
+        </div>
+
+        <div class="card-fem" style="background: var(--blanco);">
+          <div class="card-icon">📚</div>
+          <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--rosa-acento);">Docentes Encargados</span>
+          <h3 style="margin-top: 5px;">Prof. Fesar Augusto & Prof. Maria Marlene</h3>
+          <p>Liderazgo pedagógico, orientación en valores y acompañamiento formativo de las estudiantes.</p>
+        </div>
+
+        <div class="card-fem" style="background: var(--blanco);">
+          <div class="card-icon">🌸</div>
+          <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: var(--rosa-acento);">Dinamizadora Estudiantil</span>
+          <h3 style="margin-top: 5px;">Sara Sofia Lopez Quintana</h3>
+          <p>Apoyo logístico, dinamización de actividades y participación activa en el centro.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE INSCRIPCIÓN / CONTACTO DIRECTO A WHATSAPP -->
+  <section id="contacto" class="sec-form-fem">
+    <div class="form-card-fem">
+      <h2>Únete o Comunícate</h2>
+      <p>Envíanos tu propuesta, inscríbete al centro de interés o ponte en contacto.</p>
+
+      <form id="formSoyMas">
+        <label for="nombre">Tu Nombre Completo *</label>
+        <input type="text" id="nombre" placeholder="Ej. Sofía Martínez" required>
+
+        <label for="grado">Grado del Estudiante *</label>
+        <select id="grado" required>
+          <option value="" disabled selected>Selecciona tu grado...</option>
+          <option value="6° Sexto">6° Sexto</option>
+          <option value="7° Séptimo">7° Séptimo</option>
+          <option value="8° Octavo">8° Octavo</option>
+          <option value="9° Noveno">9° Noveno</option>
+          <option value="10° Décimo">10° Décimo</option>
+          <option value="11° Once">11° Once</option>
+        </select>
+
+        <label for="asunto">Motivo de contacto *</label>
+        <select id="asunto">
+          <option>Inscribirme al Centro de Interés</option>
+          <option>Proponer una idea o taller</option>
+          <option>Contactar a los responsables</option>
+        </select>
+
+        <label for="mensaje">Mensaje o Propuesta</label>
+        <textarea id="mensaje" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+        <button type="submit" class="btn-submit-fem">Enviar Mensaje a WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>🌸 Soy Más + &nbsp;✦&nbsp; Centro de Interés</p>
+    <p style="font-size: 0.8rem; margin-top: 5px; opacity: 0.8;">Inspirando y transformando realidades · 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
